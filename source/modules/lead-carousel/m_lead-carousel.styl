@@ -1,0 +1,401 @@
+.m_lead-carousel
+  .lead-carousel-nav
+    position relative
+    height 55px
+    line-height 55px
+    max-width 1200px
+    margin 0 auto
+    padding-left 15px
+    padding-right 15px
+    background #fff
+    z-index 15
+    @media SM
+      height 65px
+      line-height 65px
+    .mmt-arrow
+      position absolute
+      right 15px
+      top 50%
+      width 13px
+      height 8px
+      background url("../images/mobile-menu-arrow-header.png") no-repeat 0 0
+      z-index 20
+      margin-top -4px
+      @media SM
+        display none !important
+    .slick-dots
+      width 100%
+      @media screen and (max-width: 767px)
+        anim()
+        position absolute
+        left 0
+        top 55px
+        background #fff
+        z-index 10
+        transform translateY(-100%)
+        box-shadow 0 2px 2px 2px rgba(0,0,0,0.15)
+      @media SM
+        display table !important
+      li
+        display table-cell
+        vertical-align middle
+        text-align center
+        padding 0 5px
+        cursor pointer
+        @media MD
+          padding 0 20px
+        @media screen and (max-width: 767px)
+          display block
+          border-top 1px solid #dcdcdc
+          text-align left
+          padding-left 50px
+          line-height 1
+          background url("../images/mobile-menu-arrow-body-n.png") no-repeat 98% 50%
+          background url("../images/mobile-menu-arrow-body-h.png") no-repeat 98% 50%
+        &:hover
+          @media screen and (max-width: 767px)
+            background $blue url("../images/mobile-menu-arrow-body-n.png") no-repeat 98% 50%
+          button
+            color $blue
+            @media screen and (max-width: 767px)
+              color #fff
+        button
+          anim()
+          font-regular()
+          position relative
+          display inline-block
+          vertical-align top
+          height 100%
+          line-height 65px
+          border none
+          background none
+          @media SM
+            font-size 14px
+          @media MD
+            font-size 16px
+          @media LG
+            font-size 20px
+          @media screen and (max-width: 767px)
+            transition none
+            line-height 1
+            padding-top 15px
+            padding-bottom 15px
+            font-size 22px
+            text-align left
+          &:after
+            anim()
+            content ''
+            width 100%
+            height 3px
+            background $blue
+            position absolute
+            left 0
+            bottom 0
+            opacity 0
+            @media screen and (max-width: 767px)
+              display none
+        &.slick-active
+          @media screen and (max-width: 767px)
+            background $blue
+          button
+            color $blue
+            @media screen and (max-width: 767px)
+              color #fff
+            &:after
+              opacity 1
+  .lead-carousel-slider
+    position relative
+    box-shadow inset 0 5px 5px -2px rgba(0,0,0,.15)
+    .slide
+      padding 40px 0
+      @media MD
+        height 635px
+    .image
+      position absolute
+      left 0
+      top 0
+      width 100%
+      height 100%
+      background-repeat no-repeat
+      background-position 50%
+      background-size cover
+      &:after
+        content ''
+        position absolute
+        left 0
+        top 0
+        width 100%
+        height 100%
+        background rgba(0,0,0,.8)
+    .form
+      margin-top 15px
+      @media MD
+        width 570px
+        margin-top 0
+        position relative
+        z-index 10
+        height 100%
+        display table
+        .vertical
+          display table-cell
+          vertical-align middle
+      form
+        clearfix()
+        padding 15px
+        width 100%
+        background $blue
+        border-radius 5px
+        @media LG
+          padding 30px
+        .form-large-column
+          @media SM
+            float left
+            width 48%
+            margin-left 4%
+          &:nth-child(2n+1)
+            @media SM
+              margin-left 0
+              clear left
+        article
+          color #fff
+          h2
+            font-medium()
+            font-size 20px
+          ul
+            margin-top -15px
+            li
+              margin-top 10px
+              &:before
+                content '—'
+                color #fff
+                font-weight normal
+          .checked-list
+            padding-top 5px
+            li
+              position relative
+              padding-left 30px
+              font-size 16px
+              &:before
+                content ''
+                background: url('../images/sprite.png') no-repeat -50px 0;
+                width: 20px;
+                height: 17px;
+                position absolute
+                left 0
+                top 5px
+          .bottom
+            font-regular()
+            position relative
+            font-size 18px
+            p
+              margin-bottom 0
+            a
+              position relative
+              text-decoration underline
+              color #fff
+              &:after
+                content '→'
+                position absolute
+                right -25px
+                top 0
+              &:hover
+                text-decoration none
+            .row
+              position relative
+              margin-bottom 15px
+              &:last-child
+                margin-bottom 0
+            .left
+              padding-right 100px
+            .right
+              position absolute
+              right 0
+              top 50%
+              line-height 24px
+              margin-top -12px
+      .form-row
+        clearfix()
+        margin-bottom 10px
+        @media LG
+          &:last-child
+            margin-bottom 0
+        &.bordered
+          padding-bottom 15px
+          border-bottom 1px solid #54a4ce
+        &.submit-row
+          .label
+            @media screen and (max-width: 479px)
+              display none
+          .input
+            @media screen and (max-width: 479px)
+              margin-top 15px
+      .label
+        font-size 16px
+        color #fff
+        padding-bottom 5px
+        @media XS
+          float left
+          width 40%
+          display table
+          height 50px
+          padding-right 15px
+        @media SM
+          float none
+          width 100%
+          height auto
+        &.bold
+          font-weight bold
+        span
+          @media XS
+            display table-cell
+            vertical-align middle
+      .input
+        @media XS
+          float left
+          width 60%
+        @media SM
+          float none
+          width 100%
+        button[type=submit]
+          border none
+          width 100%
+          height 50px
+          line-height 50px
+          font-size 20px
+        input.form-input
+          height 50px
+          line-height 50px
+          border none
+          border-radius 4px
+          width 100%
+          padding 0 15px
+          font-semilight()
+        .select2-container
+          width 100% !important
+          .select2-selection--single
+            height 50px
+            border none
+            .select2-selection__rendered
+              line-height 50px
+              color #333
+              padding-left 15px
+              padding-right 40px
+            .select2-selection__arrow
+              height 50px
+              top 0
+              right 0
+              width 40px
+              b
+                border none
+                background: url('../images/sprite.png') no-repeat 0 0;
+                width: 11px;
+                height: 6px;
+                margin-top -3px
+        .radios
+          display block
+          margin-bottom 10px
+          .radio-custom
+            display inline-block
+            vertical-align middle
+            margin-right 10px
+          label
+            display inline-block
+            vertical-align middle
+            cursor pointer
+            input
+              display none
+            .rc-icon
+              display inline-block
+              vertical-align middle
+              width 20px
+              height 20px
+              border-radius 50%
+              background #fff
+            .rc-label
+              display inline-block
+              vertical-align middle
+              line-height 20px
+              color #fff
+              font-size 16px
+            input:checked + .rc-icon
+              box-shadow inset 0 0 0 4px #fff
+              background #fec107
+        .checked
+          display block
+          label
+            display inline-block
+            vertical-align middle
+            cursor pointer
+            input
+              display none
+            .cc-icon
+              display inline-block
+              vertical-align middle
+              width 20px
+              height 20px
+              border-radius 4px
+              background #fff
+            .cc-label
+              display inline-block
+              vertical-align middle
+              line-height 20px
+              color #fff
+              font-size 16px
+            input:checked + .cc-icon
+              box-shadow inset 0 0 0 4px #fff
+              background #fec107
+    .text
+      color #fff
+      @media MD
+        display table
+        position absolute
+        right 15px
+        top 0
+        height 100%
+        width 100%
+        padding-left 630px
+        .vertical
+          display table-cell
+          vertical-align middle
+      h2
+        font-medium()
+        font-size 36px
+        margin-bottom 15px
+        @media XS
+          font-size 48px
+        @media LG
+          line-height 1
+          margin-bottom 30px
+        &.large
+          @media LG
+            font-size 66px
+      ul
+        margin-bottom 30px
+        @media MD
+          margin-bottom 0
+        li
+          position relative
+          padding-left 50px
+          padding-top 8px
+          padding-bottom 8px
+          font-size 24px
+          line-height 1
+          margin-bottom 15px
+          @media LG
+            font-size 32px
+            padding-top 4px
+            padding-bottom 4px
+            margin-bottom 25px
+          &:last-child
+            margin-bottom 0
+          &:after
+            content ''
+            background: url('../images/sprite.png') no-repeat 0 -50px;
+            width: 40px;
+            height: 40px;
+            position absolute
+            left 0
+            top 1px
+      .action
+        margin-top 40px
+        margin-bottom 15px

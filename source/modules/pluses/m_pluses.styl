@@ -1,0 +1,77 @@
+.m_pluses
+  background #eff6f9
+  padding-bottom 30px
+  @media MD
+    padding-bottom 40px
+  .action
+    text-align center
+    margin-top 15px
+    @media LG
+      margin-top 30px
+  .item
+    clearfix()
+    anim()
+    background #ffffff
+    box-shadow 3px 0 24px rgba(108, 141, 155, .1)
+    @media XS
+      height 300px
+    @media SM
+      height 325px
+    @media LG
+      height 400px
+    &:hover
+      box-shadow 3px 0 24px rgba(108, 141, 155, .5)
+      .image:after
+        opacity .3
+      .desc
+        background $blue
+        h2, p
+          color #fff
+    & + .item
+      margin-top 15px
+      @media LG
+        margin-top 30px
+    &:nth-child(even) .image
+      @media XS
+        float right
+    .image, .desc
+      @media XS
+        float left
+        width 50%
+        height 100%
+    .image
+      background-repeat no-repeat
+      background-position 50%
+      background-size cover
+      height 200px
+      position relative
+      @media XS
+        height 100%
+      &:after
+        anim()
+        content ''
+        width 100%
+        height 100%
+        background #2c2c2c
+        position absolute
+        left 0
+        top 0
+        opacity 0
+
+    .desc
+      anim()
+      padding 15px
+      h2
+        anim()
+        font-semilight()
+        color $blue
+        font-size 28px
+        line-height 1
+        margin-bottom 10px
+        @media XS
+          font-size 36px
+      p
+        anim()
+        margin-bottom 5px
+        font-light()
+        font-size 20px

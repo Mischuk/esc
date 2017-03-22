@@ -1,0 +1,85 @@
+// Mobile burger button
+.mobile-menu-trigger
+  anim()
+  position absolute
+  left 0
+  top 0
+  display block
+  z-index 15
+  width 100%
+  height 100%
+  cursor pointer
+  background #fff
+  @media screen and (min-width: 768px)
+    display none
+  &:after,
+  &:before,
+  span.icon
+    anim()
+    content ''
+    position absolute
+    left 15px
+    width 24px
+    height 2px
+    background $blue
+  &:before
+    top 18px
+  &:after
+    bottom 18px
+  span.icon
+    top 50%
+    margin-top -1.5px
+  &.open
+    span.icon
+      opacity 0
+      transform translateX(-5px)
+    &:after
+      transform rotate(135deg) translate(-6px, 6px)
+    &:before
+      transform rotate(-135deg) translate(-6px, -6px)
+  .label
+    font-regular()
+    position absolute
+    left 50px
+    top 0
+    line-height 55px
+    color #000
+    font-size 22px
+  &.open + .slick-dots
+    transform translateY(0) !important
+.button-main
+  transition background-color 0.3s cubic-bezier(.33,.66,.66,1), box-shadow 0.3s cubic-bezier(.33,.66,.66,1)
+  font-semilight()
+  display inline-block
+  vertical-align middle
+  height 36px
+  line-height 36px
+  padding 0 25px
+  font-size 16px
+  color #000
+  text-transform uppercase
+  border-radius 5px
+  background #fec107
+  box-shadow 0 2px 0 #d8a50a
+  @media MD
+    height 44px
+    line-height 44px
+    font-size 20px
+  &.large
+    height 70px
+    line-height 70px
+    padding 0 30px
+    font-size 20px
+    @media XS
+      padding 0 40px
+  &.medium
+    height 55px
+    line-height 55px
+  &:hover
+    transition background-color 0.3s cubic-bezier(.33,.66,.66,1)
+    background #F79824
+    box-shadow 0 2px 0 #F79824 - 25%
+  &:active
+    background #F79824 - 15%
+    transform translateY(1px)
+    box-shadow 0 1px 0 #F79824 - 25%, inset 1px 1px 1px 1px #F79824 - 25%

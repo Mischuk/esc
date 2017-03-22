@@ -1,0 +1,56 @@
+.m_contacts
+  position relative
+  .wrapper
+    position static
+  .info
+    background #fff
+    box-shadow 0 0 15px rgba(0,0,0,.15)
+    margin-bottom 30px
+    padding 20px
+    @media SM
+      position absolute
+      left 5px
+      top 50%
+      width 370px
+      height 370px
+      margin-top -185px
+      z-index 1
+      padding 30px
+    @media MD
+      width 470px
+    @media LG
+      left 50%
+      margin-left -525px
+    .title
+      font-medium()
+      color $blue
+      font-size 24px
+      @media XS
+        font-size 34px
+      @media MD
+        margin-bottom 20px
+    .row
+      margin-bottom 10px
+      @media MD
+        margin-bottom 15px
+    .label, .value, .value span
+      display inline-block
+      vertical-align middle
+      font-size 16px
+    .button-main
+      padding-left 15px
+      padding-right 15px
+      @media MD
+        margin-top 20px
+    .label
+      color #999999
+    .value
+      color #333
+      a
+        color $blue
+        &:hover
+          text-decoration underline
+  #map
+    height 300px
+    @media SM
+      height 580px

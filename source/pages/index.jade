@@ -1,0 +1,658 @@
+doctype html
+html(lang="ru").no-js
+  head
+    block title
+      title ЕЦС - Все для вас и вашего автомобиля
+    meta(charset="utf-8")
+    meta(http-equiv="x-ua-compatible" content="ie=edge")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    meta(name="msapplication-tap-highlight" content="no")
+    link(rel="stylesheet" href="css/plugins.css")
+    link(rel="stylesheet" href="css/app.css")
+    script(src="js/modernizr.js")
+  body
+    header.m_header
+      .wrapper
+        .vertical
+          .logo: a(href="#")
+            img(class="desktop" src="images/logo.png" alt="")
+            img(class="mobile" src="images/logo-mobile.png" alt="")
+          .info
+            .menu
+              ul
+                li: a(href="#") Как мы работаем
+                li: a(href="#") Наши преимущества
+                li: a(href="#") Страховые компании
+                li: a(href="#") Отзывы
+                li: a(href="#") Контакты
+            .contacts
+              .tel: a(href="tel:+78126080014") <span>+7 (812)</span> 608-00-14
+              .callback: a(class="button-main popup-with-zoom-anim" href="#modal-callback") Заказать звонок
+    .m_lead-carousel
+      .lead-carousel-nav
+        i.mmt-arrow
+        .mobile-menu-trigger
+          span.icon
+          span.label ОСАГО
+      .lead-carousel-slider
+        .slide(data-dot-title="ОСАГО")
+          .image(style="background-image: url('images/lead/1.jpg')")
+          .wrapper
+            .text
+              .vertical
+                h2.large Страховка ОСАГО <br>от 499 рублей
+                ul
+                  li Онлайн расчет
+                  li Бесплатная доставка
+            .form
+              .vertical
+                form
+                  .form-large-column
+                    .form-row
+                      .label: span Тип транспортного средства
+                      .input
+                        select
+                          option Легковые автомобили
+                          option Грузовые автомобили
+                    .form-row
+                      .label: span Мощность двигателя
+                      .input
+                        select
+                          option До 50 включительно
+                          option До 100 включительно
+                          option До 150 включительно
+                          option До 200 включительно
+                    .form-row
+                      .label: span Кол-во лиц
+                      .input
+                        select
+                          option 1
+                          option 2
+                          option 3
+                          option 4
+                          option 5
+                          option 6
+                    .form-row
+                      .label: span Возраст и стаж
+                      .input
+                        select
+                          option Более 22 лет со стажем
+                          option Более 25 лет со стажем
+                          option Более 30 лет со стажем
+                          option Более 35 лет со стажем
+                    .form-row
+                      .label: span Срок страхования
+                      .input
+                        select
+                          option 1 год
+                          option 2 года
+                          option 3 года
+                          option 4 года
+                  .form-large-column
+                    .form-row
+                      .label: span Собственник
+                      .input
+                        select
+                          option Физическое лицо
+                          option Юридическое лицо
+                    .form-row
+                      .label: span Место регистрации
+                      .input
+                        select
+                          option Санкт-Петербург
+                          option Москва
+                    .form-row
+                      .label: span Кол-во лет безаварийной езды
+                      .input
+                        select
+                          option 1 год безубыточной езды
+                          option 2 года безубыточной езды
+                          option 5 лет безубыточной езды
+                    .form-row
+                      .label: span Контактный телефон
+                      .input
+                        input(class="mask-tel form-input" type="tel" placeholder="+7 (___) ___-__-__" required)
+                    .form-row.submit-row
+                      .label &nbsp;
+                      .input
+                        button(class="button-main" type="submit") Рассчитать
+        .slide(data-dot-title="КАСКО")
+          .image(style="background-image: url('images/lead/2.jpg')")
+          .wrapper
+            .text
+              .vertical
+                h2.large Страховка КАСКО <br>от 5000 рублей
+                ul
+                  li Быстрый расчет
+                  li Бесплатная доставка
+            .form
+              .vertical
+                form
+                  .form-row.bordered
+                    .label.bold Виды страхования
+                    .input
+                      .radios
+                        .radio-custom
+                          label
+                            input.text(type="radio" name="type-kasko")
+                            span.rc-icon
+                            span.rc-label Ущерб и угон
+                        .radio-custom
+                          label
+                            input.text(type="radio" name="type-kasko")
+                            span.rc-icon
+                            span.rc-label Только ущерб
+                        .radio-custom
+                          label
+                            input.text(type="radio" name="type-kasko")
+                            span.rc-icon
+                            span.rc-label Только угон
+                      .checked
+                        label
+                          input(type="checkbox")
+                          span.cc-icon
+                          span.cc-label ОСАГО (9% скидка на КАСКО)
+                  .form-row
+                    .form-large-column
+                      .form-row
+                        .label: span Автомобиль
+                        .input
+                          select
+                            option BMW
+                            option Mercedes
+                      .form-row
+                        .label: span Модель
+                        .input
+                          select
+                            option X5
+                            option X7
+                            option Y8
+                            option Z4
+                    .form-large-column
+                      .form-row
+                        .label: span Год выпуска
+                        .input
+                          select
+                            option 2017
+                            option 2016
+                            option 2015
+                            option 2014
+                            option 2013
+                            option 2012
+                      .form-row
+                        .label: span Тип кузова
+                        .input
+                          select
+                            option Универсал, 5 дв.
+                            option X7
+                            option Y8
+                            option Z4
+                    .form-large-column
+                      .form-row
+                        .label: span Контактный телефон
+                        .input
+                          input(class="mask-tel form-input" type="tel" placeholder="+7 (___) ___-__-__" required)
+                    .form-large-column
+                      .form-row
+                        .label: span ФИО
+                        .input
+                          input(class="form-input" type="text")
+                    .form-large-column
+                      .form-row.submit-row
+                        .label &nbsp;
+                        .input
+                          button(class="button-main" type="submit") Рассчитать
+        .slide(data-dot-title="Договор купли-продажи")
+          .image(style="background-image: url('images/lead/3.jpg')")
+          .wrapper
+            .text
+              .vertical
+                h2 Договор купли-продажи
+                ul
+                  li Юридически грамотный договор по нормативам ГИБДД
+                  li Заверенный печатью организации
+                  li Принимается в любом МРЭО
+                  li При оформлении договора бесплатная проверка авто на ограничения
+            .form
+              .vertical
+                form
+                  .form-row.bordered
+                    article
+                      h2 Квалифицированные специалисты согласно нормативным документам и рекомендациям МРЭО ГИБДД.
+                      p Необходимые документы для оформления ДКП:
+                      ul
+                        li Паспорта продавца и покупателя
+                        li ПТС и свидетельство о регистрации ТС
+                        li При необходимости: доверенность продавца, временная регистрация
+                      .bottom
+                        .left
+                          p Оформление в офисе
+                          p с 10:00 до 23:00 <a class="arrow" href="#">Адреса</a>
+                        .right 500 руб.
+                  .form-row
+                    .form-large-column
+                      .form-row
+                        .label: span Контактный телефон
+                        .input
+                          input(class="mask-tel form-input" type="tel" placeholder="+7 (___) ___-__-__" required)
+                    .form-large-column
+                      .form-row
+                        .label: span ФИО
+                        .input
+                          input(class="form-input" type="text")
+                    .form-large-column
+                      .form-row.submit-row
+                        .label &nbsp;
+                        .input
+                          button(class="button-main" type="submit") Отправить заявку
+        .slide(data-dot-title="Зеленая карта")
+          .slide(data-dot-title="ОСАГО")
+            .image(style="background-image: url('images/lead/4.jpg')")
+            .wrapper
+              .text
+                .vertical
+                  h2.large Зеленая карта
+                  ul
+                    li Быстрый расчет
+                    li Бесплатная доставка
+                  .action: a(class="button-main popup-with-zoom-anim" href="#modal-video") Онлайн-видео с границы
+              .form
+                .vertical
+                  form
+                    .form-large-column
+                      .form-row
+                        .label: span Тип транспортного средства
+                        .input
+                          select
+                            option Легковые автомобили
+                            option Грузовые автомобили
+                      .form-row
+                        .label: span Покрытие
+                        .input
+                          select
+                            option Все страны
+                            option СНГ
+                      .form-row
+                        .label: span Срок действия
+                        .input
+                          select
+                            option 1
+                            option 2
+                            option 3
+                            option 4
+                            option 5
+                            option 6
+                    .form-large-column
+                      .form-row
+                        .label: span ФИО
+                        .input
+                          input(class="form-input" type="text")
+                      .form-row
+                        .label: span Контактный телефон
+                        .input
+                          input(class="mask-tel form-input" type="tel" placeholder="+7 (___) ___-__-__" required)
+                      .form-row.submit-row
+                        .label &nbsp;
+                        .input
+                          button(class="button-main" type="submit") Рассчитать
+        .slide(data-dot-title="Проверка автомобиля")
+          .image(style="background-image: url('images/lead/5.jpg')")
+          .wrapper
+            .text
+              .vertical
+                h2.large Проверка авто
+            .form
+              .vertical
+                form
+                  .form-row.bordered
+                    article
+                      h2 Предлагаем вам проверить приобретаемый автомобиль на розыск (угон) и возможность регистрационных действий в МРЭО ГИБДД
+                      .bottom
+                        .row
+                          .left
+                            p Проверка автомобиля на ограничения по базам ГИБДД (банки, приставы, розыск, ЖКХ)
+                          .right 1 500 руб.
+                        .row
+                          .left
+                            p Проверка автомобиля на угон
+                          .right 1 100 руб.
+
+                  .form-row
+                    .form-large-column
+                      .form-row
+                        .label: span Контактный телефон
+                        .input
+                          input(class="mask-tel form-input" type="tel" placeholder="+7 (___) ___-__-__" required)
+                    .form-large-column
+                      .form-row
+                        .label: span ФИО
+                        .input
+                          input(class="form-input" type="text")
+                    .form-large-column
+                      .form-row.submit-row
+                        .label &nbsp;
+                        .input
+                          button(class="button-main" type="submit") Отправить заявку
+        .slide(data-dot-title="Постановка на учет")
+          .image(style="background-image: url('images/lead/6.jpg')")
+          .wrapper
+            .text
+              .vertical
+                h2 Постановка автомобился на учет
+                ul
+                  li Беспрепятственно
+                  li Быстро
+                  li Комфортно
+            .form
+              .vertical
+                form
+                  .form-row.bordered
+                    article
+                      h2 Для постановке автотранспорта на учёт в ГИБДД Санкт-Петербурга и Ленинградской области необходимо предоставить:
+                      ul.checked-list
+                        li Паспорт транспортного средства (ПТС)
+                        li Договор Купли-Продажи
+                        li Документ, удостоверяющий личность
+                        li Транзитные номера (при их наличии)
+                        li Страховой полис ОСАГО (расчет ОСАГО)
+                        li Квитанции об оплате государственной пошлины (Возможна оплата у нас в офисе)
+                      .bottom
+                        .row
+                          .left
+                            p Стоимость постановки на учет ТС
+                          .right 3 000 руб.
+                  .form-row
+                    .form-large-column
+                      .form-row
+                        .label: span Контактный телефон
+                        .input
+                          input(class="mask-tel form-input" type="tel" placeholder="+7 (___) ___-__-__" required)
+                    .form-large-column
+                      .form-row
+                        .label: span ФИО
+                        .input
+                          input(class="form-input" type="text")
+                    .form-large-column
+                      .form-row.submit-row
+                        .label &nbsp;
+                        .input
+                          button(class="button-main" type="submit") Отправить заявку
+    .m_steps
+      .wrapper
+        .section-title Как мы работаем
+        .columns
+          .column
+            .icon: img(src="images/steps/1.png" alt="")
+            .title Оставляете заявку
+          .column
+            .icon: img(src="images/steps/2.png" alt="")
+            .title Наш специалист связывается с вами в течении 15 минут
+          .column
+            .icon: img(src="images/steps/3.png" alt="")
+            .title Рассчитываем стоимость страхования и оформляем необходиные документы
+          .column
+            .icon: img(src="images/steps/4.png" alt="")
+            .title Отправляем курьера с полисом на ваш адрес
+          .column
+            .icon: img(src="images/steps/5.png" alt="")
+            .title Как только ваш полис будет готов, мы сообщим вам об этом по телефону или электронной почте
+    .m_pluses
+      .wrapper
+        .section-title Наши преимущества
+        .list
+          .item
+            .image(style="background-image: url('images/pluses/1.png')")
+            .desc
+              .vertical-outer
+                .vertical-inner
+                  h2 Бесплатная доставка
+                  p Оперативно и бесплатно доставляем полис на указанный Вами адрес в пределах КАД
+          .item
+            .image(style="background-image: url('images/pluses/2.png')")
+            .desc
+              .vertical-outer
+                .vertical-inner
+                  h2 Техосмотр
+                  p Оказываем в получении диагностической карты
+          .item
+            .image(style="background-image: url('images/pluses/3.png')")
+            .desc
+              .vertical-outer
+                .vertical-inner
+                  h2 Надежность
+                  p Оказываем информационную поддержку в течении действия договора
+          .item
+            .image(style="background-image: url('images/pluses/4.png')")
+            .desc
+              .vertical-outer
+                .vertical-inner
+                  h2 Забота о клиентах
+                  p Содействуем при наступлении страхового случия
+        .action: a(class="button-main large popup-with-zoom-anim" href="#modal-callback") Оформить заявку
+    .m_carousels-section
+      .wrapper
+        .partners
+          .section-title Страховые компании
+          .partners-carousel
+            .slide
+              .image: img(src="images/partners/1.png" alt="")
+            .slide
+              .image: img(src="images/partners/2.png" alt="")
+            .slide
+              .image: img(src="images/partners/3.png" alt="")
+            .slide
+              .image: img(src="images/partners/4.png" alt="")
+            .slide
+              .image: img(src="images/partners/5.png" alt="")
+            .slide
+              .image: img(src="images/partners/6.png" alt="")
+            .slide
+              .image: img(src="images/partners/4.png" alt="")
+            .slide
+              .image: img(src="images/partners/2.png" alt="")
+        .comments
+          .section-title Отзывы наших клиентов
+          .comments-carousel
+            .slide
+              .details
+                .image(style="background-image: url('images/clients/1.png')")
+                .message Очень удобный сервис для вечно занятых людей! Спасибо большое! Всем друзьям рекомендую постоянно
+                .username Мария Петрова
+            .slide
+              .details
+                .image(style="background-image: url('images/clients/2.png')")
+                .message Удобно,без проблем,делал 2раза,иду на 3 заход, хорошо что стало на 2 года. Офис м. Кировский з-д.
+                .username Александр Похмелькин
+            .slide
+              .details
+                .image(style="background-image: url('images/clients/3.png')")
+                .message Оформляли 2-хлетнюю визу в Финляндию в офисе на Озерках. Потратил на это минимум времени, все четко, понятно, менеджер ответила на все вопросы. Профессиональная работа. Все сделано в срок.
+                .username Павел Журавлев
+            .slide
+              .details
+                .image(style="background-image: url('images/clients/2.png')")
+                .message Очень удобный сервис для вечно занятых людей! Спасибо большое! Всем друзьям рекомендую постоянноОформляли 2-хлетнюю визу в Финляндию в офисе на Озерках. Потратил на это минимум времени, все четко, понятно, менеджер ответила на все вопросы. Профессиональная работа. Все сделано в срок.
+                .username Павел Журавлев
+    .m_contacts
+      .wrapper
+        .info
+          .title Контактная информация
+          .row
+            .label Адрес:
+            .value Ириновский пр., д. 22, корп. 3
+          .row
+            .label Телефон:
+            .value <span>+7 (812) 608-00-14,</span> <span>+7 (911) 964-30-42</span>
+          .row
+            .label Email:
+            .value: a(href="mailto:info@insurancecenter.spb.ru ") info@insurancecenter.spb.ru
+          .row
+            .label График работы:
+            .value с 10 до 22 ежедневно
+          .action: a(class="button-main medium popup-with-zoom-anim" href="#modal-callback") Заказать обратный звонок
+      script(src="//api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript")
+      script.
+
+        function coords() {
+          if ( window.innerWidth > 750 ) {
+            coord = [59.957656, 30.467000];
+          } else {
+            coord = [59.957656, 30.472193];
+          }
+        }
+        coords();
+        window.onresize = function(event) {
+          coords();
+        };
+        ymaps.ready(function () {
+            var myMap = new ymaps.Map('map', {
+                    center: coord,
+                    zoom: 16,
+                    controls: ['zoomControl']
+                }, {
+                    searchControlProvider: 'yandex#search'
+                }),
+                myPlacemark = new ymaps.Placemark([59.957656, 30.472193], {
+                    hintContent: '',
+                    balloonContent: ''
+                }, {
+                    iconLayout: 'default#image',
+                    iconImageHref: 'images/marker.png',
+                    iconImageSize: [54, 54],
+                    iconImageOffset: [-27, -54]
+                });
+
+            myMap.geoObjects.add(myPlacemark);
+            myMap.behaviors.disable('scrollZoom');
+        });
+      #map
+    footer.m_footer
+      .wrapper
+        .vertical
+          .copyright © 2017 Единый центр страхования
+          .developed: a(href="http://pikmedia.ru/" target="_blank") Разработка сайта «Пикмедиа»
+    #modal-callback.popup.zoom-anim-dialog.mfp-hide
+      .header
+        h2 Заказать звонок
+        p Мы свяжемся с вами в удобное для вас время
+      .body
+        form
+          .form-row
+            .label Как Вас зовут?
+            .input
+              input(class="form-input" type="text" placeholder="ФИО")
+          .form-row
+            .label Ваш телефон
+            .input
+              input(class="form-input mask-tel" type="tel" placeholder="+7 (___) ___-__-__" required)
+          .form-row
+            .input
+              button(class="button-main" type="submit") Отправить заявку
+    #modal-video.popup.zoom-anim-dialog.mfp-hide
+      .header
+        .modal-tabs-nav
+          .item: a(class="current" href="#") Название пункта пропуска
+          .item: a(href="#") Название пункта пропуска
+          .item: a(href="#") Название пункта пропуска
+      .body
+        .modal-tabs-content
+          .item.current
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/bglXaMH4ZGY?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+          .item
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/sAPFEBYi0q4?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+          .item
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/sAPFEBYi0q4?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+
+    a(id="popup-success-trigger" class="popup-with-zoom-anim" href="#modal-success")
+    #modal-success.popup.zoom-anim-dialog.mfp-hide
+      .header
+        h2 Спасибо за обращение!
+      .body
+        p Наш менеджер свяжется с Вами в ближайшее время
+      .footer
+        <script src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
+        <script src="//yastatic.net/share2/share.js"></script>
+        .label Мы в соц. сетях
+        .socials
+          <div class="ya-share2" data-services="vkontakte,facebook,odnoklassniki,moimir,twitter"></div>
+    a(id="popup-total-trigger" class="popup-with-zoom-anim" href="#modal-total")
+    #modal-total.popup.zoom-anim-dialog.mfp-hide
+      .header
+        h2 Отправьте запрос, чтобы узнать итоговую стоимость
+        p Мы свяжемся с вами в удобное для вас время
+      .body
+        form
+          .form-header
+            .info
+              .icon
+              ul
+                li
+                  span.label ОСАГО:
+                  span.value 10 000 руб
+                li
+                  span.label Карта:
+                  span.value 1 000 руб
+                li
+                  span.label Доставка:
+                  span.value 0 руб
+                li
+                  span.label ОСАГО:
+                  span.value 11 000 руб
+            .additional
+              .title Дополнительно
+              ul
+                li
+                  .checked
+                    label
+                      input(type="checkbox" name="additional")
+                      span.cc-icon
+                      span.cc-label Заказать диагностическую карту
+                li
+                  .checked
+                    label
+                      input(type="checkbox" name="additional")
+                      span.cc-icon
+                      span.cc-label КАСКО
+                li
+                  .checked
+                    label
+                      input(type="checkbox" name="additional")
+                      span.cc-icon
+                      span.cc-label ОСАГО
+                li
+                  .checked
+                    label
+                      input(type="checkbox" name="additional")
+                      span.cc-icon
+                      span.cc-label Договор
+                li
+                  .checked
+                    label
+                      input(type="checkbox" name="additional")
+                      span.cc-icon
+                      span.cc-label Зеленая карта
+                li
+                  .checked
+                    label
+                      input(type="checkbox" name="additional")
+                      span.cc-icon
+                      span.cc-label Проверка постановки на учет
+          .form-row
+            .label Как Вас зовут?
+            .input
+              input(class="form-input" type="text" placeholder="ФИО")
+          .form-row
+            .label Ваш телефон
+            .input
+              input(class="form-input mask-tel" type="tel" placeholder="+7 (___) ___-__-__" required)
+          .form-row
+            .label Ваш email
+            .input
+              input(class="form-input" type="email" placeholder="")
+          .form-row
+            .input
+              button(class="button-main" type="submit") Отправить заявку
+    // Javascript
+    script(src="js/jquery.min.js")
+    script(src="js/plugins.js")
+    script(src="js/app.js")
