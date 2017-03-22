@@ -1,9 +1,9 @@
-# Project
+# Промо-страница ОСАГО
 
 ## Демо
-Смотреть: [frontende.info/project](http://frontende.info/project)
+Смотреть: [frontend.watch/esc](http://frontend.watch/esc)
 
-Скачать: [project-master.zip](https://github.com/Mischuk/project/archive/master.zip)
+Скачать: [esc-master.zip](https://github.com/Mischuk/esc/archive/master.zip)
 
 ## Описание
 * Сборщик [Gulp](http://gulpjs.com/)
