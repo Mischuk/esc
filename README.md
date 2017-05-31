@@ -1,4 +1,4 @@
-# Промо-страница ОСАГО
+# ОСАГО
 
 ## Демо
 Смотреть: [frontend.watch/esc](http://frontend.watch/esc)
