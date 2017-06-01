@@ -1,14 +1,20 @@
 h1, h2, h3, h4, h5, h6
   line-height 1.2
-  font-weight bold
+  font-medium()
 h1
   font-size 36px
 h2
-  font-size 30px
-h3
   font-size 24px
-h4
+  @media MD
+    font-size 30px
+h3
   font-size 18px
+  @media MD
+    font-size 24px
+h4
+  font-size 14px
+  @media MD
+    font-size 18px
 h5
   font-size 14px
 h6
@@ -39,16 +45,7 @@ article
     font-size 20px
   h4
     font-size 16px
-  > ul
-    padding-bottom 20px
-    li
-      &:before
-        content '•'
-        margin-right 5px
-        font-weight bold
-        color red
-      & + li
-        margin-top 5px
+
   ol
     li
       counter-increment step-counter
@@ -72,3 +69,53 @@ article
     padding 40px 0
   @media LG
     font-size 46px
+
+.page-title
+  padding 0 0 20px
+  font-weight 300
+  font-size 28px
+  font-medium()
+  @media XS
+    font-size 33px
+  @media SM
+    font-size 37px
+  @media MD
+    padding-bottom 35px
+  @media LG
+    font-size 43px
+
+.content
+  article
+    font-size 16px
+    line-height 24px
+    img
+      width 100%
+      border-radius $radius
+    h2, h3, h4, h5
+      margin-bottom 10px
+    ul
+      li
+        position relative
+        padding-left 40px
+        margin-bottom 15px
+        & + li
+          margin-top 20px
+        &:after
+          content ''
+          background: url('../images/article-list-item.png') no-repeat 0 0;
+          width: 30px;
+          height: 30px;
+          position absolute
+          left 0
+          top 0px
+          sprite()
+          @media SM
+            top -5px
+    .post-date
+      font-size 16px
+      line-height 16px
+      color #333
+      margin-bottom 10px
+      @media MD
+        margin-top -20px
+        margin-bottom 5px
